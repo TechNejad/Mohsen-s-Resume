@@ -1,4 +1,4 @@
-# Mohsen Hassan Nejad - See Online Resume [See my CV](https://technejad.github.io/Mohsen-s-Resume/)
+# Mohsen Hassan Nejad - [Click here for Online Resume](https://technejad.github.io/Mohsen-s-Resume/)
 
 ## About
 
