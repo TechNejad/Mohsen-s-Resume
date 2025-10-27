@@ -7,9 +7,9 @@ Researching how role design shapes behavior in AI agent interactions. Passionate
 Intelligence on how we learn, reason, collaborate, build, and organize ourselves.
 I'm a creative, critical thinker who thrives at the intersection of disciplines and ideas.
 
-## View Live
+# View Live
 
-[See my CV](https://technejad.github.io/Mohsen-s-Resume/)
+# [See my CV](https://technejad.github.io/Mohsen-s-Resume/)
 
 ## Contact
 
