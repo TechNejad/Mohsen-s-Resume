@@ -3,406 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohsen Hassan Nejad - CV</title>
+    <title>Simulated Norms - Thesis One-Pager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #2c3e50;
-            background: #f5f7fa;
-            padding: 20px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fafafa url('https://i.imgur.com/YourImageURL.jpg') center/cover fixed;
+            color: #1a1a1a;
+            animation: fadeIn 0.6s ease-in;
+            padding: 40px 20px;
         }
         
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            padding: 60px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         
-        header {
-            border-bottom: 3px solid #2574a9;
-            padding-bottom: 30px;
-            margin-bottom: 30px;
+        .container { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            background: #fff;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            overflow: hidden;
         }
         
-        h1 {
-            font-size: 3.5em;
-            color: #2c3e50;
-            margin-bottom: 5px;
-            font-weight: 700;
-            letter-spacing: -0.5px;
+        .hero {
+            background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+            color: #fff; padding: 60px 50px 50px;
+            position: relative;
+            overflow: hidden;
         }
         
-        .subtitle {
-            font-size: 1.3em;
-            color: #7f8c8d;
-            font-style: italic;
-            margin-bottom: 20px;
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255,255,255,0.01) 10px,
+                rgba(255,255,255,0.01) 20px
+            );
+            pointer-events: none;
         }
+        .title { font-size: 2.8em; font-weight: 800; line-height: 1.15; margin-bottom: 16px; letter-spacing: -0.02em; font-family: 'Playfair Display', serif; position: relative; z-index: 1; }
+        .subtitle { font-size: 0.92em; color: #9b8b7e; font-style: italic; font-weight: 400; letter-spacing: 0.02em; position: relative; z-index: 1; }
         
-        .contact-info {
-            font-size: 0.95em;
-            color: #34495e;
-            line-height: 1.8;
-        }
-        
-        .contact-info a {
-            color: #2574a9;
-            text-decoration: none;
-        }
-        
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        
-        .intro {
-            font-style: italic;
-            color: #555;
-            margin: 30px 0;
-            padding: 20px;
-            background: #f8f9fa;
-            border-left: 4px solid #2574a9;
-            line-height: 1.8;
-        }
-        
-        section {
-            margin: 40px 0;
-        }
-        
-        h2 {
-            font-size: 1.1em;
-            color: #2c3e50;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 20px;
-            font-weight: 700;
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 10px;
-        }
-        
-        .entry {
-            margin-bottom: 25px;
-        }
-        
-        .entry-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 8px;
-            flex-wrap: wrap;
-        }
+        .content { padding: 50px; }
 
-        .entry-title {
-            font-weight: 600;
-            color: #2c3e50;
-            font-size: 1.05em;
-        }
-
-        .entry-date {
-            color: #7f8c8d;
-            font-size: 0.95em;
-            white-space: nowrap;
-            margin-left: 15px;
+        .intro { font-size: 1.1em; line-height: 1.7; color: #2d2d2d; }
+        
+        .question-block {
+            background: #f8f8f8; padding: 28px 40px; margin: 45px 0; border-left: 4px solid #C2410C;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .entry-subtitle {
-            font-style: italic;
-            color: #555;
-            margin-bottom: 5px;
+        .question-block:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(194,65,12,0.1);
         }
-        
-        .entry-description {
-            color: #555;
-            font-style: italic;
-            line-height: 1.7;
+        .question-label {
+            font-size: 1.05em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: #C2410C; margin-bottom: 12px;
         }
+        .question-text { font-size: 1.05em; font-style: italic; line-height: 1.5; color: #1a1a1a; }
         
-        ul {
-            margin-left: 20px;
-            margin-top: 8px;
+        .two-col-section { display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px; }
+        .section-label {
+            font-size: 1.05em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: #C2410C; margin-bottom: 6px;
         }
+        .section-body { font-size: 0.98em; line-height: 1.75; color: #333; }
         
-        li {
-            margin-bottom: 6px;
-            color: #555;
+        .mechanisms-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 24px 0; }
+        .mechanism-card { 
+            background: #fafafa; 
+            padding: 20px; 
+            border-radius: 4px;
+            border: 1px solid #e6e6e6;
+            transition: all 0.3s ease;
+            cursor: pointer;
         }
-        
-        .skills-list {
-            list-style: none;
-            margin-left: 0;
+        .mechanism-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+            border-color: #C2410C;
+            background: #fff;
         }
+        .mechanism-title { font-weight: 700; color: #1a1a1a; margin-bottom: 8px; font-size: 0.95em; }
+        .mechanism-desc { font-size: 0.88em; color: #666; line-height: 1.5; }
         
-        .skills-list li {
-            padding-left: 0;
-            margin-bottom: 15px;
+        .design-note { font-size: 0.92em; color: #666; margin-top: 20px; font-style: italic; }
+        
+        .theory-list { display: grid; gap: 8px; }
+        .theory-item { display: flex; gap: 12px; }
+        .theory-bullet { width: 6px; height: 6px; background: #2d2d2d; border-radius: 50%; margin-top: 10px; flex-shrink: 0; }
+        .theory-content { flex: 1; }
+        .theory-title { font-weight: 700; color: #1a1a1a; display: inline; }
+        .theory-text  { color: #333; display: inline; line-height: 1.7; }
+        
+        .contributions { background: #2d2d2d; color: #fff; padding: 40px 50px; margin-top: 15px; }
+        .contributions-title { font-size: 0.95em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; opacity: 0.7; margin-bottom: 20px; }
+        .contributions-text { font-size: 1.05em; line-height: 1.7; margin-bottom: 28px; }
+        .deliverables { font-size: 0.9em; opacity: 0.75; line-height: 1.6; }
+        .deliverables strong { opacity: 1; font-weight: 600; }
+        
+        .footer { background: #fafafa; padding: 40px 50px; display: flex; justify-content: space-between; align-items: center; }
+        .author-block { flex: 1; }
+        .author-name { font-size: 1.05em; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
+        .author-details { font-size: 0.9em; color: #666; line-height: 1.6; }
+        .links { display: flex; flex-direction: column; gap: 10px; align-items: flex-end; }
+        .link-item { font-size: 0.9em; }
+        .link-item a { 
+            color: #1a1a1a; 
+            text-decoration: none; 
+            border-bottom: 2px solid #C2410C; 
+            padding-bottom: 2px; 
+            transition: all 0.2s ease;
         }
-        
-        .skill-name {
-            font-weight: 600;
-            color: #2c3e50;
-            display: block;
-            margin-bottom: 4px;
+        .link-item a:hover { 
+            color: #C2410C;
+            border-bottom-color: transparent;
+            transform: translateY(-1px);
         }
-        
-        .skill-description {
-            color: #555;
-            font-style: normal;
+        .contact-links { font-size: 0.88em; color: #666; }
+        .contact-links a { 
+            color: #1a1a1a; 
+            text-decoration: none; 
+            border-bottom: 1px solid #999;
+            transition: all 0.2s ease;
         }
-        
-        footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 2px solid #ecf0f1;
-            text-align: center;
-            color: #7f8c8d;
-            font-style: italic;
-        }
-        
-        @media print {
-            body {
-                background: white;
-                padding: 0;
-            }
-            
-            .container {
-                box-shadow: none;
-                padding: 40px;
-            }
+        .contact-links a:hover { 
+            color: #C2410C;
+            border-bottom-color: #C2410C;
         }
         
         @media (max-width: 768px) {
-            .container {
-                padding: 30px 20px;
-            }
-            
-            h1 {
-                font-size: 2em;
-            }
-            
-            .entry-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .entry-date {
-                margin-left: 0;
-                margin-top: 5px;
-            }
+            .hero, .content, .contributions, .footer { padding: 40px 30px; }
+            .two-col-section { display: flex; flex-direction: column; gap: 16px; margin-bottom: 20px; }
+            .mechanisms-grid { grid-template-columns: 1fr; }
+            .footer { flex-direction: column; align-items: flex-start; gap: 25px; }
+            .links { align-items: flex-start; }
         }
+        
+        @media print {
+            body { background: #fff; }
+            .hero { background: #2d2d2d; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+
+        .section-sep { border-top: 1px solid #e6e6e6; margin: 24px 0; }
+
+        .question-block { margin-top: 12px !important; margin-bottom: 24px !important; }
+        
+        h1, h2, h3, h4 { margin-top: 0.6em; margin-bottom: 0.4em; }
+        p { margin-top: 0.4em; margin-bottom: 0.6em; }
+        ul, ol { margin-top: 0.4em; margin-bottom: 0.6em; }
+        .tight-bottom { margin-bottom: 8px !important; }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>MOHSEN HASSAN NEJAD</h1>
-            <div class="subtitle">Master's student in Artificial Intelligence for Sustainable Societies</div>
-            <div class="contact-info">
-                <div><a href="mailto:Mohsen.nejad94@gmail.com">Mohsen.nejad94@gmail.com</a></div>
-                <div><a href="https://linkedin.com/in/mohsenhassannejad/" target="_blank">Linkedin.com/in/mohsenhassannejad/</a></div>
-                <div><a href="https://github.com/TechNejad" target="_blank">Github.com/TechNejad</a></div>
-                <div>Iranian | Based in Tampere, Finland</div>
-                <div>English (fluent), Farsi (native)</div>
+        <div class="hero">
+            <div class="title">Simulated Norms: The Fragile Business of Prompt Engineering Ethical Norms in Multi-Agent LLM Systems</div>
+            <div class="subtitle">Work-in-progress master's thesis proposal</div>
+        </div>
+        
+        <div class="content">
+            <div class="two-col-section">
+                <div class="section-label">The Central Problem</div>
+                <div class="section-body">
+                     Current normative design in multi-agent LLMs is <strong>rapid, unsystematic, and haphazard</strong>. Through trial-and-error prompt programming, developers embed ethical frameworks—Kantian universalization, utilitarian optimization, virtue ethics—into agent roles without principled guidelines or evaluation standards.
+                     <br><br>
+                     <strong>Example from commons dilemma:</strong> Adding a Kantian universalization prompt—"Given the current situation, if everyone fishes more than X tons, the lake population will shrink next month"—improved agent survival rates from 0% to 100%. But what normative assumptions does this lock in? Who decides which ethical framework to operationalize?
+                     <br><br>
+                     <strong>The Gap:</strong> As these systems deploy in energy grids, supply chains, and healthcare, we lack clear taxonomies or standards for encoding ethics into prompts.
+                </div>
             </div>
-        </header>
 
-        <div class="intro">
-            <p>Researching how role design shapes behavior in AI agent interactions. Passionate about the impact of Artificial Intelligence on how we learn, reason, collaborate, build, and organize ourselves.</p>
-            <p>I'm a creative, critical thinker who thrives at the intersection of disciplines and ideas.</p>
+            <div class="question-block">
+                <div class="question-label">Main Research Question</div>
+                <div class="question-text">
+                    How are ethical norms encoded into agents across multi-agent systems, and what are their sociotechnical implications?
+                </div>
+            </div>
+            
+            <div class="two-col-section">
+                <div class="section-label">Research Approach</div>
+                <div class="section-body">
+                    <strong>Qualitative Thematic Analysis</strong> of 15-20 multi-agent LLM papers with GitHub repositories. Inductive approach: patterns emerge from system prompts, code, and experiments.
+                    
+                    <div class="design-note" style="margin-bottom: 20px; margin-top: 20px;"><strong style="font-style: normal;">Primary coding framework—three ethical theories:</strong></div>
+                    <div class="mechanisms-grid">
+                        <div class="mechanism-card">
+                            <div class="mechanism-title">Deontological</div>
+                            <div class="mechanism-desc">rules, duties, obligations</div>
+                        </div>
+                        <div class="mechanism-card">
+                            <div class="mechanism-title">Consequentialist</div>
+                            <div class="mechanism-desc">outcomes, utility, optimization</div>
+                        </div>
+                        <div class="mechanism-card">
+                            <div class="mechanism-title">Virtue Ethics</div>
+                            <div class="mechanism-desc">character traits, social roles</div>
+                        </div>
+                    </div>
+
+                    <strong>Process:</strong> Initial coding → theme formation → in-depth analysis (2-4 papers per theme) → synthesis of connections and tensions
+                    
+                    <div class="design-note" style="margin-top: 20px;">
+                        Framework: Woodgate & Ajmeri (2024), <em>Macro Ethics Principles for Responsible AI Systems</em>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-sep"></div>
+            <div class="two-col-section tight-bottom">
+                <div class="section-label">Analytical Framework</div>
+                <div class="section-body">
+                    <div class="theory-list">
+                        <div class="theory-item">
+                            <div class="theory-bullet"></div>
+                            <div class="theory-content">
+                                <span class="theory-title">Three Ethical Frameworks</span>
+                                <span class="theory-text">— Map how philosophical principles (duty, outcomes, character) translate into machine-executable prompts.</span>
+                            </div>
+                        </div>
+                        <div class="theory-item">
+                            <div class="theory-bullet"></div>
+                            <div class="theory-content">
+                                <span class="theory-title">Compliance vs. Competence</span>
+                                <span class="theory-text">— Distinguish rule-following from moral reasoning ability.</span>
+                            </div>
+                        </div>
+                        <div class="theory-item">
+                            <div class="theory-bullet"></div>
+                            <div class="theory-content">
+                                <span class="theory-title">Sociotechnical Analysis</span>
+                                <span class="theory-text">— Examine where technical choices intersect with social values and whose norms get prioritized.</span>
+                            </div>
+                        </div>
+                        <div class="theory-item">
+                            <div class="theory-bullet"></div>
+                            <div class="theory-content">
+                                <span class="theory-title">Multi-Agent Testing Grounds</span>
+                                <span class="theory-text">— Social norms require interaction to manifest, making multi-agent simulations critical experimental sites.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contributions">
+            <div class="contributions-title">Expected Contribution</div>
+            <div class="contributions-text">
+                Typology of normative design patterns · Evidence-based guidelines for encoding ethics · Risk identification for AI governance · Practical insights for developers and policymakers
+            </div>
+            <div class="deliverables">
+                <strong>Deliverables:</strong> Thesis · Briefs · Conference papers · Workshops · Design taxonomy
+            </div>
         </div>
 
-        <section>
-            <h2>Academic Background</h2>
-            
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Joint MA in AI for Sustainable Societies (EMJM Scholarship)</div>
-                    <div class="entry-date">2024–2026</div>
+        <div class="footer">
+            <div class="author-block">
+                <div class="author-name">Mohsen Hassan Nejad</div>
+                <div class="author-details">
+                    Master's in Artificial Intelligence for Sustainable Societies (AISS)<br>
+                    Erasmus Mundus Scholarship · 2025-2026
                 </div>
-                <div class="entry-subtitle">TLU (Estonia), UL (Portugal), TAU (Finland)</div>
-                <div class="entry-description">Focus: AI & Data science for Sustainable Digital Societies, Active citizenship</div>
             </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">BA in International Relations (stipendium hungaricum Scholarship)</div>
-                    <div class="entry-date">2019–2022</div>
+            <div class="links">
+                <div class="link-item">
+                    <a href="https://docs.google.com/document/d/13HdbxagbMUa5Y8iukpybiEJUAIF-IcdyL_gDgcrTJss/edit?tab=t.0">Full Detailed Proposal</a>
                 </div>
-                <div class="entry-subtitle">Eötvös Loránd University, Budapest</div>
-                <div class="entry-description">Thesis: Algorithmic Power and the Politics of AI</div>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">BA in Business Administration</div>
-                    <div class="entry-date">2014–2018</div>
+                <div class="contact-links">
+                    <a href="mailto:mohsen.nejad94@gmail.com">Email</a> · 
+                    <a href="https://www.linkedin.com/in/mohsenhassannejad/">LinkedIn</a>
                 </div>
-                <div class="entry-subtitle">KU Leuven University, Brussels</div>
-                <div class="entry-description">Transferred Credits to IR studies</div>
             </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">International Baccalaureate (IB) Diploma Programme (DP)</div>
-                    <div class="entry-date">2011–2013</div>
-                </div>
-                <div class="entry-description">Higher Level: Business – Economics – Language & Literature</div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Professional Experiences</h2>
-            
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Co-Founder | IBEX (Tehran, Iran)</div>
-                    <div class="entry-date">2018–2019</div>
-                </div>
-                <ul>
-                    <li>Built and sold 60 handmade wooden children's bicycles in 2 months, launching a startup from scratch.</li>
-                    <li>Led full-cycle development: business strategy, branding, and production.</li>
-                    <li>(Samples: @BIKKIDO on Instagram)</li>
-                </ul>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Head of Global Talent Program | AIESEC Belgium</div>
-                    <div class="entry-date">2017–2018</div>
-                </div>
-                <ul>
-                    <li>Led national strategy and operations for the international professional internship program.</li>
-                    <li>Managed a team of five in recruiting interns for companies like Microsoft, Schneider Electric, and UCB.</li>
-                    <li>Oversaw the arrival of 100+ international interns to Belgium.</li>
-                    <li>Co-facilitated a year-long educational program for 300+ youth through five major conferences and various training and workshops.</li>
-                </ul>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Committee Coordinator | AIESEC in Campus Brussel</div>
-                    <div class="entry-date">2015–2016</div>
-                </div>
-                <ul>
-                    <li>Spearheaded operations for a 7-member team, delivering 36 internships and a Job Fair (9 firms, 400+ attendees, 20,000€ raised).</li>
-                </ul>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Freelance Consultant & Creator</div>
-                    <div class="entry-date">2022–2024</div>
-                </div>
-                <ul>
-                    <li>Advised small family-run businesses (e.g. travel agency) on content and strategy. Produced videos, wrote copy, and translated materials. Ran informal workshops on AI tools and digital skills for peers and community.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Projects & Initiatives</h2>
-            
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Master's Thesis</div>
-                    <div class="entry-date">In progress</div>
-                </div>
-                <div class="entry-description">Examining how ethical frameworks are prompt-engineered into LLM agents across multi-agent simulations.</div>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Prompt Academy for Kids</div>
-                    <div class="entry-date">In progress</div>
-                </div>
-                <div class="entry-description">Co-creating a game for kids to explore how AI roles change with different prompts. Testing the first level with real users.</div>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Predictive ML: Data Analysis</div>
-                    <div class="entry-date">2025</div>
-                </div>
-                <div class="entry-description">Python-based time series Beijing Air Quality analysis (EDA, feature engineering, and ML modeling). Part of the Fundamentals of Machine Learning course (AISS).</div>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">BA Thesis: Algorithmic Power & Politics of AI</div>
-                    <div class="entry-date">2021–2022</div>
-                </div>
-                <div class="entry-description">Examined how predictive ML and Big Data contribute to the rise of a new mode of power: Algorithmic Power, focusing on socio-political implications.</div>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Debate Club Founder & Moderator</div>
-                    <div class="entry-date">2021–2022</div>
-                </div>
-                <div class="entry-description">Launched and led a university debate club during IR studies, hosting regular sessions on politics, philosophy, and emerging technologies.</div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Technical Skills</h2>
-            
-            <ul class="skills-list">
-                <li>
-                    <span class="skill-name">Data Science With Python</span>
-                    <span class="skill-description">Data analysis, visualization, and predictive ML modeling with Pandas, NumPy, Scikit-learn, and Matplotlib (At a higher level supported by AI assistants).</span>
-                </li>
-                <li>
-                    <span class="skill-name">LLM Agent Design & Orchestration (in progress)</span>
-                    <span class="skill-description">Learning how to build agentic workflows using various platforms. Exploring system prompt engineering, how LLMs interpret roles, maintain memory, use tools, and adapt across dialogue.</span>
-                </li>
-                <li>
-                    <span class="skill-name">Visualization, Prototyping & Tools</span>
-                    <span class="skill-description">Building demos, dashboards, and web-based prototypes by combining AI assistants (e.g. Gemini, Claude, ChatGPT), coding tools (e.g. Cursor, Streamlit, Hugging Face), and collaboration platforms (e.g. Colab, GitHub, Jupyter).</span>
-                </li>
-                <li>
-                    <span class="skill-name">Research Methods</span>
-                    <span class="skill-description">Statistical reasoning, research synthesis, and design thinking in interdisciplinary contexts.</span>
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Leadership & Soft Skills</h2>
-            
-            <ul>
-                <li>Public Speaking & Workshop Facilitation</li>
-                <li>Strategic Planning & Project Management</li>
-                <li>Cross-cultural & Interdisciplinary Collaboration</li>
-                <li>Entrepreneurial Mindset & Innovation</li>
-                <li>Content Creation & Visual Storytelling</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Courses & Programs</h2>
-            
-            <ul>
-                <li>Effective Thesis Accelerator Program (Remote)</li>
-                <li>BlueDot Impact: Intro to Transformative AI (Remote)</li>
-                <li>Goethe Institute: AI to Amplify Fellowship (Remote)</li>
-                <li>HuggingFace AI Agents Course (Remote)</li>
-                <li>Deep Network Development – ELTE University (In person)</li>
-                <li>Yale Online: Intro to Psychology (Paul Bloom) (Remote)</li>
-                <li>Current Master's Courses in AI for Sustainable Societies Listed <a href="https://github.com/TechNejad" target="_blank">Here</a></li>
-            </ul>
-        </section>
-
-        <footer>
-            References available upon request<br>
-            All projects available on my GitHub: <a href="https://github.com/TechNejad" target="_blank">TechNejad</a>
-        </footer>
+        </div>
     </div>
 </body>
 </html>
