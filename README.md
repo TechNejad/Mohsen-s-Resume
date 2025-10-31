@@ -9,7 +9,7 @@ I'm a creative, critical thinker who thrives at the intersection of disciplines 
 
 ## Contact
 
-- Email: Mohsen.nejad94@gmail.com
+- Mohsen.nejad94@gmail.com
 - [LinkedIn:](https://linkedin.com/in/mohsenhassannejad/)
 - [GitHub:](https://github.com/TechNejad)
 - [Website:](https://mohsen-hassan-nejad.netlify.app/)
