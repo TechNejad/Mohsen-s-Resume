@@ -1,4 +1,4 @@
-# Mohsen Hassan Nejad - [Click here for Online Resume](https://technejad.github.io/Mohsen-s-Resume/)
+[Click here for Online Resume](https://technejad.github.io/Mohsen-s-Resume/)
 
 ## About
 
