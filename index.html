@@ -10,7 +10,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
@@ -18,7 +18,7 @@
             background: #f5f7fa;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -26,13 +26,13 @@
             padding: 60px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        
+
         header {
             border-bottom: 3px solid #2574a9;
             padding-bottom: 30px;
             margin-bottom: 30px;
         }
-        
+
         h1 {
             font-size: 3.5em;
             color: #2c3e50;
@@ -40,43 +40,38 @@
             font-weight: 700;
             letter-spacing: -0.5px;
         }
-        
+
         .subtitle {
             font-size: 1.3em;
             color: #7f8c8d;
             font-style: italic;
             margin-bottom: 20px;
         }
-        
+
         .contact-info {
             font-size: 0.95em;
             color: #34495e;
             line-height: 1.8;
         }
-        
+
         .contact-info a {
             color: #2574a9;
             text-decoration: none;
         }
-        
+
         .contact-info a:hover {
             text-decoration: underline;
         }
-        
-        .intro {
-            font-style: italic;
-            color: #555;
-            margin: 30px 0;
-            padding: 20px;
-            background: #f8f9fa;
-            border-left: 4px solid #2574a9;
-            line-height: 1.8;
-        }
-        
+
         section {
             margin: 40px 0;
         }
-        
+
+        section p {
+            color: #555;
+            line-height: 1.8;
+        }
+
         h2 {
             font-size: 1.1em;
             color: #2c3e50;
@@ -87,11 +82,11 @@
             border-bottom: 2px solid #ecf0f1;
             padding-bottom: 10px;
         }
-        
+
         .entry {
             margin-bottom: 25px;
         }
-        
+
         .entry-header {
             display: flex;
             justify-content: space-between;
@@ -112,86 +107,77 @@
             white-space: nowrap;
             margin-left: 15px;
         }
-        
+
         .entry-subtitle {
             font-style: italic;
             color: #555;
             margin-bottom: 5px;
         }
-        
+
         .entry-description {
             color: #555;
             font-style: italic;
             line-height: 1.7;
         }
-        
+
         ul {
             margin-left: 20px;
             margin-top: 8px;
         }
-        
+
         li {
             margin-bottom: 6px;
             color: #555;
         }
-        
+
         .skills-list {
             list-style: none;
             margin-left: 0;
         }
-        
+
         .skills-list li {
             padding-left: 0;
             margin-bottom: 15px;
         }
-        
+
         .skill-name {
             font-weight: 600;
             color: #2c3e50;
             display: block;
             margin-bottom: 4px;
         }
-        
+
         .skill-description {
             color: #555;
             font-style: normal;
         }
-        
-        footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 2px solid #ecf0f1;
-            text-align: center;
-            color: #7f8c8d;
-            font-style: italic;
-        }
-        
+
         @media print {
             body {
                 background: white;
                 padding: 0;
             }
-            
+
             .container {
                 box-shadow: none;
                 padding: 40px;
             }
         }
-        
+
         @media (max-width: 768px) {
             .container {
                 padding: 30px 20px;
             }
-            
+
             h1 {
                 font-size: 2em;
             }
-            
+
             .entry-header {
                 flex-direction: column;
                 align-items: flex-start;
             }
-            
+
             .entry-date {
                 margin-left: 0;
                 margin-top: 5px;
@@ -203,206 +189,153 @@
     <div class="container">
         <header>
             <h1>MOHSEN HASSAN NEJAD</h1>
-            <div class="subtitle">Master's student in Artificial Intelligence for Sustainable Societies</div>
+            <div class="subtitle">Master's Student in Artificial Intelligence for Sustainable Societies</div>
             <div class="contact-info">
-                <div><a href="mailto:Mohsen.nejad94@gmail.com">Mohsen.nejad94@gmail.com</a></div>
-                <div><a href="https://linkedin.com/in/mohsenhassannejad/" target="_blank">Linkedin.com/in/mohsenhassannejad/</a></div>
-                <div><a href="https://github.com/TechNejad" target="_blank">Github.com/TechNejad</a></div>
-                <div><a href="https://mohsen-hassan-nejad.netlify.app/" target="_blank">Website</a></div>
-                <div>Nationality: Iranian | Location: Tampere, Finland | Languages: English (fluent), Farsi (native)</div>
+                <div><a href="mailto:Mohsen.nejad94@gmail.com">Mohsen.nejad94@gmail.com</a> | <a href="https://linkedin.com/in/mohsenhassannejad/" target="_blank">LinkedIn</a> | <a href="https://github.com/TechNejad" target="_blank">Github</a> | <a href="https://mohsen-hassan-nejad.netlify.app/" target="_blank">Website</a></div>
+                <div>Tampere, Finland • Languages: English (Fluent), Farsi (Native)</div>
             </div>
         </header>
 
-        <div class="intro">
-            <p>Researching how role design shapes behavior in AI agent interactions. Passionate about the impact of Artificial Intelligence on how we learn, reason, collaborate, build, and organize ourselves.</p>
-            <p>I'm a creative, critical thinker who thrives at the intersection of disciplines and ideas.</p>
-        </div>
+        <section>
+            <h2>Profile</h2>
+            <p>Master's student in Artificial Intelligence for Sustainable Societies with a background in Business Administration and International Relations. Researching role design in multi-agent interactions while building LLM-powered applications and workflows. Passionate about the impact of AI on how we learn, reason, collaborate, and organize ourselves. Combining technical development with interdisciplinary thinking towards social welfare.</p>
+        </section>
 
         <section>
-            <h2>Academic Background</h2>
-            
+            <h2>Research Interests</h2>
+            <p>Philosophy of AI • Social Simulation • Human–AI Interaction • Multi-Agent LLM Systems • Normative Role Design • System Prompts • Computational Social Science</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+
             <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Joint MA in AI for Sustainable Societies (EMJM Scholarship)</div>
-                    <div class="entry-date">2024–2026</div>
-                </div>
-                <div class="entry-subtitle">TLU (Estonia), UL (Portugal), TAU (Finland)</div>
-                <div class="entry-description">Focus: AI & Data science for Sustainable Digital Societies, Active citizenship</div>
+                <div class="entry-title">Artificial Intelligence for Sustainable Societies (AISS) – Erasmus Mundus Joint Master's Scholarship | 2024–2026</div>
+                <div class="entry-subtitle">Tallinn University, Lusófona University, Tampere University</div>
             </div>
 
             <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">BA in International Relations (stipendium hungaricum Scholarship)</div>
-                    <div class="entry-date">2019–2022</div>
-                </div>
-                <div class="entry-subtitle">Eötvös Loránd University, Budapest</div>
-                <div class="entry-description">Thesis: Algorithmic Power and the Politics of AI</div>
+                <div class="entry-title">BA in International Relations – Scholarship | 2019–2022</div>
+                <div class="entry-subtitle">Eötvös Loránd University</div>
             </div>
 
             <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">BA in Business Administration</div>
-                    <div class="entry-date">2014–2018</div>
-                </div>
-                <div class="entry-subtitle">KU Leuven University, Brussels</div>
-                <div class="entry-description">Transferred Credits to IR studies</div>
+                <div class="entry-title">BA in Business Administration | 2014–2018</div>
+                <div class="entry-subtitle">KU Leuven University</div>
             </div>
 
             <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">International Baccalaureate (IB) Diploma Programme (DP)</div>
-                    <div class="entry-date">2011–2013</div>
-                </div>
-                <div class="entry-description">Higher Level: Business – Economics – Language & Literature</div>
+                <div class="entry-title">IB Diploma Programme | 2011–2013</div>
             </div>
         </section>
 
         <section>
-            <h2>Professional Experiences</h2>
-            
+            <h2>Research & Projects</h2>
+
             <div class="entry">
                 <div class="entry-header">
-                    <div class="entry-title">Co-Founder | IBEX (Tehran, Iran)</div>
-                    <div class="entry-date">2018–2019</div>
+                    <div class="entry-title">Master's Thesis: Simulated Norms</div>
                 </div>
-                <ul>
-                    <li>Built and sold 60 handmade wooden children's bicycles in 2 months, launching a startup from scratch.</li>
-                    <li>Led full-cycle development: business strategy, branding, and production.</li>
-                    <li>(Samples: @BIKKIDO on Instagram)</li>
-                </ul>
+                <div class="entry-description">A systematic review to construct an ontology of normative role design in multi-agent LLM systems.</div>
             </div>
 
             <div class="entry">
                 <div class="entry-header">
-                    <div class="entry-title">Head of Global Talent Program | AIESEC Belgium</div>
-                    <div class="entry-date">2017–2018</div>
+                    <div class="entry-title">Civic AI Debaters</div>
                 </div>
-                <ul>
-                    <li>Led national strategy and operations for the international professional internship program.</li>
-                    <li>Managed a team of five in recruiting interns for companies like Microsoft, Schneider Electric, and UCB.</li>
-                    <li>Oversaw the arrival of 100+ international interns to Belgium.</li>
-                    <li>Co-facilitated a year-long educational program for 300+ youth through five major conferences and various training and workshops.</li>
-                </ul>
+                <div class="entry-description">Co-developed a web app to compare the effects of single vs. debating agents on user knowledge acquisition for civic engagement and public discourse topics</div>
             </div>
 
             <div class="entry">
                 <div class="entry-header">
-                    <div class="entry-title">Committee Coordinator | AIESEC in Campus Brussel</div>
-                    <div class="entry-date">2015–2016</div>
+                    <div class="entry-title">Beijing Air Quality Predictor – Machine Learning Project</div>
                 </div>
-                <ul>
-                    <li>Spearheaded operations for a 7-member team, delivering 36 internships and a Job Fair (9 firms, 400+ attendees, 20,000€ raised).</li>
-                </ul>
+                <div class="entry-description">Python-based time series analysis (EDA, feature engineering, and ML modeling)</div>
             </div>
 
             <div class="entry">
                 <div class="entry-header">
-                    <div class="entry-title">Freelance Consultant & Creator</div>
-                    <div class="entry-date">2022–2024</div>
+                    <div class="entry-title">Prompt Academy – AI Learning Game</div>
                 </div>
-                <ul>
-                    <li>Advised small family-run businesses (e.g. travel agency) on content and strategy. Produced videos, wrote copy, and translated materials. Ran informal workshops on AI tools and digital skills for peers and community.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Projects & Initiatives</h2>
-            
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Master's Thesis – Simulated Norms</div>
-                    <div class="entry-date">In progress</div>
-                </div>
-                <div class="entry-description">Simulated Norms: Towards Constructing an Ontology of Normative Role Design in Multi-Agent LLM Systems</div>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Prompt Academy for Kids</div>
-                    <div class="entry-date">In progress</div>
-                </div>
-                <div class="entry-description">Co-creating a game for kids to explore how AI roles change with different prompts. Testing the first level with real users.</div>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Predictive ML: Data Analysis</div>
-                    <div class="entry-date">2025</div>
-                </div>
-                <div class="entry-description">Python-based time series Beijing Air Quality analysis (EDA, feature engineering, and ML modeling). Part of the Fundamentals of Machine Learning course (AISS).</div>
+                <div class="entry-description">An interactive game that teaches children how different AI roles function and interact. Featuring multiple LLM agent interactions</div>
             </div>
 
             <div class="entry">
                 <div class="entry-header">
                     <div class="entry-title">BA Thesis: Algorithmic Power & Politics of AI</div>
-                    <div class="entry-date">2021–2022</div>
                 </div>
                 <div class="entry-description">Examined how predictive ML and Big Data contribute to the rise of a new mode of power: Algorithmic Power, focusing on socio-political implications.</div>
             </div>
 
             <div class="entry">
                 <div class="entry-header">
-                    <div class="entry-title">Debate Club Founder & Moderator</div>
-                    <div class="entry-date">2021–2022</div>
+                    <div class="entry-title">Debate Club Founder and Moderator</div>
                 </div>
-                <div class="entry-description">Launched and led a university debate club during IR studies, hosting regular sessions on politics, philosophy, and emerging technologies.</div>
+                <div class="entry-description">Created and led a university debate club focused on political theory and philosophy, emerging technologies, and AI ethics.</div>
             </div>
         </section>
 
         <section>
-            <h2>Technical Skills</h2>
-            
+            <h2>Skills</h2>
+
             <ul class="skills-list">
                 <li>
-                    <span class="skill-name">Data Science With Python</span>
-                    <span class="skill-description">Data analysis, visualization, and predictive ML modeling with Pandas, NumPy, Scikit-learn, and Matplotlib (At a higher level supported by AI assistants).</span>
+                    <span class="skill-name">Data Science & Machine Learning</span>
+                    <span class="skill-description">Exploratory Data analysis, visualization, and predictive Machine Learning with Python, Pandas, NumPy, Scikit-learn, and Matplotlib; statistical analysis and modeling</span>
                 </li>
                 <li>
-                    <span class="skill-name">LLM Agent Design & Orchestration (in progress)</span>
-                    <span class="skill-description">Learning how to build agentic workflows using various platforms. Exploring system prompt engineering, how LLMs interpret roles, maintain memory, use tools, and adapt across dialogue.</span>
+                    <span class="skill-name">LLM Application Development</span>
+                    <span class="skill-description">Designing and implementing multi-agent systems and agentic workflows using LLM APIs. Prompt/context engineering and system design</span>
                 </li>
                 <li>
-                    <span class="skill-name">Visualization, Prototyping & Tools</span>
-                    <span class="skill-description">Building demos, dashboards, and web-based prototypes by combining AI assistants (e.g. Gemini, Claude, ChatGPT), coding tools (e.g. Cursor, Streamlit, Hugging Face), and collaboration platforms (e.g. Colab, GitHub, Jupyter).</span>
+                    <span class="skill-name">Prototyping & Webapp Development</span>
+                    <span class="skill-description">Developing research prototypes and experimental environments with Python, JavaScript, HTML/JSON; deployed via Streamlit, Jupyter, GitHub, Colab, AI-assisted tools (Claude Code, Cursor, Gemini CLI)</span>
                 </li>
                 <li>
-                    <span class="skill-name">Research Methods</span>
-                    <span class="skill-description">Statistical reasoning, research synthesis, and design thinking in interdisciplinary contexts.</span>
+                    <span class="skill-name">Research & Analysis</span>
+                    <span class="skill-description">Statistical reasoning, systematic review, ontology construction, interdisciplinary synthesis</span>
+                </li>
+                <li>
+                    <span class="skill-name">Communication & Teaching</span>
+                    <span class="skill-description">Public speaking, academic facilitation, workshop design</span>
+                </li>
+                <li>
+                    <span class="skill-name">Leadership</span>
+                    <span class="skill-description">Team coordination, cross-cultural collaboration, project management</span>
                 </li>
             </ul>
         </section>
 
         <section>
-            <h2>Leadership & Soft Skills</h2>
-            
-            <ul>
-                <li>Public Speaking & Workshop Facilitation</li>
-                <li>Strategic Planning & Project Management</li>
-                <li>Cross-cultural & Interdisciplinary Collaboration</li>
-                <li>Entrepreneurial Mindset & Innovation</li>
-                <li>Content Creation & Visual Storytelling</li>
-            </ul>
+            <h2>Professional Experience</h2>
+
+            <div class="entry">
+                <div class="entry-title">Freelance Consultant & Creator | Remote | 2022–2024</div>
+                <div class="entry-description">Provided digital strategy, AI-skills workshops, and content creation services to small businesses and community members, facilitating the adoption of new technologies.</div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-title">Co-Founder | IBEX | Tehran, Iran | 2018–2019</div>
+                <div class="entry-description">Launched and managed a startup selling 60+ handmade children's bicycles, overseeing branding, production, supply chain, and marketing.</div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-title">Head of Global Talent Program | AIESEC Belgium | 2017–2018</div>
+                <div class="entry-description">Led national operations for a professional internship program, partnering with Microsoft, Schneider Electric, and UCB, and co-facilitated educational initiatives reaching 300+ youth.</div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-title">Committee Coordinator | AIESEC in Campus Brussel | 2015–2016</div>
+                <div class="entry-description">Spearheaded local operations, securing 36 internships and organizing a Job Fair with 9 firms, 400+ attendees, and 20,000€ raised.</div>
+            </div>
         </section>
 
         <section>
-            <h2>Courses & Programs</h2>
-            
-            <ul>
-                <li>Effective Thesis Accelerator Program (Remote)</li>
-                <li>BlueDot Impact: Intro to Transformative AI (Remote)</li>
-                <li>Goethe Institute: AI to Amplify Fellowship (Remote)</li>
-                <li>HuggingFace AI Agents Course (Remote)</li>
-                <li>Deep Network Development – ELTE University (In person)</li>
-                <li>Yale Online: Intro to Psychology (Paul Bloom) (Remote)</li>
-                <li>Current Master's Courses in AI for Sustainable Societies Listed <a href="https://github.com/TechNejad" target="_blank">Here</a></li>
-            </ul>
+            <h2>Courses & Fellowships</h2>
+
+            <p>HuggingFace AI Agents • BlueDot Transformative AI • AI Safety and Society Course • Goethe Institute AI to Amplify Fellowship • Effective Thesis Accelerator • Deep Network Development • Yale Psychology</p>
         </section>
 
-        <footer>
-            References available upon request<br>
-            All projects available on my GitHub: <a href="https://github.com/TechNejad" target="_blank">TechNejad</a>
-        </footer>
     </div>
 </body>
 </html>
